@@ -148,6 +148,9 @@ main > section{
   font-weight: 400;
   font-size: 1rem;
 }
+.features_container{
+  padding: 14px;
+}
 #experience_badge{
   padding: 25px 25px;
   font-size: 1.25rem;
@@ -162,13 +165,13 @@ main > section{
 .some_fact_discribtion{
   max-width: 542px;
   margin-top: 20px;
+  padding: 14px;
 }
 
 .fact_reward{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 107px;
-  margin-left: 65px;
 }
 
 .fact_card{
@@ -193,6 +196,7 @@ main > section{
 .our_sponspors{
   max-width: 542px;
   text-align: center;
+  padding: 14px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -204,19 +208,12 @@ main > section{
 }
 /*===== footer section start =======*/
 .footer{
-  max-width: 1440px;
+  width: 100% ;
   background-color: rgb(255, 244, 231);
   text-align: center;
   padding: 38px 0;
   margin: 0 auto;
 }
-
-
-
-
-
-
-
 
 
 
@@ -234,17 +231,21 @@ main > section{
   }
  
   .team_img_container,
-  .fact_reward {
+  .fact_reward,
+  .sponsor_companies {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 35px;
-  } 
+    justify-items: center;
+  }
+
   .Our_Features {
     text-align: center;
     margin-left: 20px;
   }  
   #experience_badge {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 0 auto;
+    /* margin-top: 20px;
+    margin-left: 20px; */
   }
 }
 /* medium size device */
@@ -256,10 +257,17 @@ main > section{
   .Our_Features{
     text-align: center;
     margin:20px 0 20px 0;
-  }  
-  .fact_reward{
-    margin-left: 10px;
-    margin-right: 10px;
-    gap: 10px;
+  } 
+  #experience_badge {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
+  
+  .fact_reward,
+  .sponsor_companies{
+    grid-template-columns:repeat(2, 1fr) ;
+    justify-items: center;
+    gap: 80px;
   }
 }
